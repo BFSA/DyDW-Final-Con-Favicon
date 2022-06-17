@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="icon" href="img/icon favicon 2.png"
+  <title> Delicatto Dulce Pastelería-Pedido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+</head>
+<!--TÍTULO-->
+<div class="Titulo">
+    <div class="row">
+      <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <img class="imagenLogo" src="img/Logo.png" alt="logo" >
+      </div>
+      <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+        <h1 class="titulo">Delicatto Dulce Pastelería</h1>
+      </div>
+    </div>
+  </div>
+  <!--BARRA DE NAVEGACIÓN-->
+  <body>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="historia.html">HISTORIA</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li><a href="pedido.html">PEDIDOS</a></li>
+        </ul>
+      </div>
+      </nav>
+  </body>
+  </html>
+  <br>
+  <body>
+    <h1 id="pedido">FORMULARIO DE PEDIDO</h1>
+    <div class="containerform">
+      <div class="row">
+        <div class="col">
+          <div class="shadow-lg p-3 mb-5 mt-4 bg-boy rounded">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
+                <input id="Nombre y Apellido" name="Nombre y Apellido" type="text" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Email" class="form-label">Email</label>
+                <input id="Email" name="Email" type="text" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Pais" class="form-label">Pais</label>
+                <select name="Pais" id="Pais" class="form-select">
+                  <option selected disabled value="">Seleccione</option>
+                  <option>Argentina</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="Dirección" class="form-label">Dirección (Nombre de la calle, altura y piso)</label>
+                <input id="Dirección" name="Dirección" type="text" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Código Postal"class="form-label">Código Postal</label>
+                <input id="Código Postal" name="Código Postal" type="number" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Producto" class="form-label">Producto</label>
+                <select name="Producto" id="Producto" class="form-select">
+                  <option selected  value="">Seleccione</option>
+                  <option>Torta Franco $1.500</option>
+                  <option>Torta Scott $2.500</option>
+                  <option>Torta Rocher $1.700</option>
+                  <option>Torta Fruto $3.100</option>
+                  <option>Muffin Choco $200</option>
+                  <option>Muffin Red $200</option>
+                  <option>Crooisant $150 c/u</option>
+                  <option>Croissant Choco $180 c/u</option>
+                  <option>Macarans (x5) $500</option>
+                  <option>Alfajor (x2) $170</option>
+                  <option>Torta Cheesecake $750</option>
+                  <option>Muffin Carrot $530</option>
+                  <option>Muffin Bosque $450</option>
+                  <option>Muffin Rocher $300</option>
+
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="Fecha de entrega"class="form-label">Fecha de entrega</label>
+                <input id="Fecha de entrega" name="Fecha de entrega" type="date" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Hora de entrega"class="form-label">Hora de entrega</label>
+                <input id="Hora de entrega" name="Hora de entrega" type="time" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Retiro "class="form-label">Retiro por sucursal (Si/No)</label>
+                <input id="Retiro" name="Retiro" type="text" class="form-control"required>
+                <div class="valid-feedback">Campo OK</div>
+                <div class="invalid-feedback">Complete el campo</div>
+              </div>
+              <div class="col-md-4">
+                <label for="Aclaraciones"class="form-label">Aclaraciones (Opcional)</label>
+                <input id="Aclaraciones" name="Aclaraciones type="text" class="form-control"
+              </div>
+              <button type="Enviar" class="btn btn-success">Enviar</button>
+              <button type="Cancelar"class="btn btn-danger">Cancelar</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>        
+      (function () {
+        'use strict'
+      
+        // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+        var forms = document.querySelectorAll('.needs-validation')
+      
+        //Recorremos los forms y evitamos en envío sin validacion
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }else{
+                alert ("DATOS VALIDADOS")
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+          </script>    
+        </body>
+      </html>
+
+  </body>
+ <!--FOOTER-->
+<footer class="piedepagina">
+    <section>
+      <br>
+      <br>
+        TODOS LOS DERECHOS RESERVADOS
+    </section>
+  </footer>
+  </body>
+  </html>

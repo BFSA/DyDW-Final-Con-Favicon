@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:rgb(255, 253, 208);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:black;
+    background:rgb(255, 253, 208);
+}
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+    padding: 2rem;
+    font-size: x-large;
+    color: black;
+    font-size: 20px;
+    background:rgb(255, 253, 208);
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration:none;
+    color: black;
+    padding: .5rem;
+    display: block;
+}
+.navbar-links li :hover{
+    background-color: #555;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+@media (max-width:600px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+
+    }
+
+    .navbar-links li a{
+        padding:.5rem 1rem ;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
+.Titulo h1{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5%;
+}
+.imagenLogo{
+    width: 50%;
+    height: 50%;
+}
+#destacados{
+    text-align: center;
+}
+.card img{
+    width: 55%;
+    height: 55%;
+}
+.piedepagina{
+    text-align: center;
+    
+}
+.imgpaste{
+    margin-left: 25%;
+    width:55%; 
+    height:55%;
+}
+.historia p{
+    text-align: center;
+    text-justify:auto;
+}
+.Contacto h1{
+    text-align: center;
+}
+#productos{
+    text-align: center;
+}
+#pedido {
+    text-align:center;
+    font-style: normal;
+}
